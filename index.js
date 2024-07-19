@@ -20,7 +20,7 @@ db.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
-app.use("/api/users", require("./routes/users"));
+app.use("/api/users", require("./routes/users.js"));
 app.use("/api/notes", require("./routes/notes.js"));
 
 app.listen(port, () => {
